@@ -9,15 +9,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Depann'Car</a>
+            <a class="navbar-brand" <?php echo ($page == "Index" ? "active" : "")?>"<a href="http://127.0.0.1:3232/Depann'Car">Depann'Car</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href=http://127.0.0.1:3232/Depann'Car>Accueil</a></li>
-                <li><a href="http://127.0.0.1:3232/Depann'Car/Inscription.php">Inscription</a></li>
-                <li><a href="http://127.0.0.1:3232/Depann'Car/Connexion.php">Connexion</a></li>
-                <li><a href="http://127.0.0.1:3232/Depann'Car/Profil.php">Profil</a></li>
-                <li><a href="http://127.0.0.1:3232/Depann'Car/Contact.php">Contact</a></li>
+                <li class="<?php echo ($page == "Index" ? "active" : "")?>"><a href=http://127.0.0.1:3232/Depann'Car>Accueil</a></li>
+                <li class="<?php echo ($page == "Inscription" ? "active" : "")?>"><a href="http://127.0.0.1:3232/Depann'Car/Inscription.php">Inscription</a></li>
+                <li class="<?php echo ($page == "Connexion" ? "active" : "")?>"><a href="http://127.0.0.1:3232/Depann'Car/Connexion.php">Connexion</a></li>
+                <li class="<?php echo ($page == "Profil" ? "active" : "")?>"><a href="http://127.0.0.1:3232/Depann'Car/Profil.php">Profil</a></li>
+                <li class="<?php echo ($page == "Contact" ? "active" : "")?>"><a href="http://127.0.0.1:3232/Depann'Car/Contact.php">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

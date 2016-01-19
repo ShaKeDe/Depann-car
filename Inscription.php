@@ -19,12 +19,16 @@
 </head>
 <body>
 
+
+<?php $page = "Inscription"; ?>
+
+
 <div class="starter-template">
     <?php include("header.php"); ?>
 
     <?php include("footer.php"); ?>
     <h1>Inscription</h1>
-    
+
 </div>
 
 

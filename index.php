@@ -37,15 +37,19 @@
 <body>
 
 
+<?php $page = "Index"; ?>
+
+
 
 
 <div class="container">
+
+
 
     <div class="starter-template">
 
 
         <?php include("header.php"); ?>
-
 
 
 <div class="carrousel">

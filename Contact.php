@@ -18,13 +18,14 @@
 
 </head>
 <body>
+<?php $page = "Contact"; ?>
 <div class="container">
 
     <div class="starter-template">
         <?php include("header.php"); ?>
 
         <?php include("footer.php"); ?>
-        <?php include("header.php"); ?>
+
 
         <?php
         session_start();
@@ -75,7 +76,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="inputmessage">Votre message</label>
-                            <textarea required id="inputmessage" name="message" class="form-control"><?php echo isset($_SESSION['inputs']['message'])? $_SESSION['inputs']['message'] : ''; ?></textarea>
+                            <textarea required id="inputmessage" name="message" rows="10" cols="50" class="form-control"><?php echo isset($_SESSION['inputs']['message'])? $_SESSION['inputs']['message'] : ''; ?></textarea>
                         </div><!--/*.form-group-->
                     </div><!--/*.col-md-12-->
                     <div class="col-md-12">

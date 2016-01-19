@@ -18,7 +18,7 @@
 
 </head>
 <body>
-
+<?php $page = "Profil"; ?>
 <div class="container">
 
     <div class="starter-template">
