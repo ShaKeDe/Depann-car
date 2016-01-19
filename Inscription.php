@@ -24,6 +24,7 @@
 
     <?php include("footer.php"); ?>
     <h1>Inscription</h1>
+    
 </div>
 
 

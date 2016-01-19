@@ -1,21 +1,21 @@
 <?php
-session_start();//on démarre la session
+session_start();//on dï¿½marre la session
 // $errors = [];
-$errors = array(); // on crée une vérif de champs
+$errors = array(); // on crï¿½e une vï¿½rif de champs
 if(!array_key_exists('name', $_POST) || $_POST['name'] == '') {// on verifie l'existence du champ et d'un contenu
-    $errors ['name'] = "vous n'avez pas renseigné votre nom";
+    $errors ['name'] = "vous n'avez pas renseignï¿½ votre nom";
 }
-if(!array_key_exists('email', $_POST) || $_POST['email'] == '' || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {// on verifie existence de la clé
-    $errors ['mail'] = "vous n'avez pas renseigné votre email";
+if(!array_key_exists('email', $_POST) || $_POST['email'] == '' || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {// on verifie existence de la clï¿½
+    $errors ['mail'] = "vous n'avez pas renseignï¿½ votre email";
 }
 if(!array_key_exists('message', $_POST) || $_POST['message'] == '') {
-    $errors ['message'] = "vous n'avez pas renseigné votre message";
+    $errors ['message'] = "vous n'avez pas renseignï¿½ votre message";
 }
 if(array_key_exists('antispam', $_POST)) {// on place un petit filet anti robots spammers
-    $errors ['antispam'] = "Vous êtes un robots spammer";
+    $errors ['antispam'] = "Vous ï¿½tes un robots spammer";
 }
 //On check les infos transmises lors de la validation
-if(!empty($errors)){ // si erreur on renvoie vers la page précédente
+if(!empty($errors)){ // si erreur on renvoie vers la page prï¿½cï¿½dente
     $_SESSION['errors'] = $errors;//on stocke les erreurs
     $_SESSION['inputs'] = $_POST;
     header('Location: contact.php');
@@ -24,8 +24,8 @@ if(!empty($errors)){ // si erreur on renvoie vers la page précédente
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
     $headers .= 'FROM:' . htmlspecialchars($_POST['email']);
-    $to = 'Debienne.alexandre@gmail.com'; // Insérer votre adresse email ICI
-    $subject = 'Message envoyé par ' . htmlspecialchars($_POST['name']) .' - <i>' . htmlspecialchars($_POST['email']) .'</i>';
+    $to = 'Debienne.alexandre@gmail.com'; // Insï¿½rer votre adresse email ICI
+    $subject = 'Message envoyï¿½ par ' . htmlspecialchars($_POST['name']) .' - <i>' . htmlspecialchars($_POST['email']) .'</i>';
     $message_content = '
   <table>
   <tr>
@@ -42,7 +42,7 @@ if(!empty($errors)){ // si erreur on renvoie vers la page précédente
   </tr>
   </table>
   ';
-    mail(£to, $subject, $message_content, $headers);
+    mail($to, $subject, $message_content, $headers);
     header('Location: contact.php');
 }
 

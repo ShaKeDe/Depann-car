@@ -8,10 +8,16 @@
     <meta name="Depann'Car STJO content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Depann'Car</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
@@ -21,18 +27,12 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/ui-lightness/jquery-ui.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
 
 </head>
 
-<script>
-    $('.carousel').carousel({
-        interval: 3000
-    })
-</script>
 
 <body>
 
@@ -42,69 +42,33 @@
 <div class="container">
 
     <div class="starter-template">
+
+
         <?php include("header.php"); ?>
 
 
-        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="img/1.jpg" alt="First Slide">
-                    <div class="carousel-caption">
-                        <h3>First slide label</h3>
-                        <p>Lorem ipsum dolor sit amet...</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/2.jpg" alt="Second Slide">
-                    <div class="carousel-caption">
-                        <h3>Second slide label</h3>
-                        <p>Aliquam sit amet gravida nibh, facilisis...</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/3.jpg" alt="Third Slide">
-                    <div class="carousel-caption">
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna vel...</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel nav -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
+
+<div class="carrousel">
+
+     <?php include("carousel.php"); ?>
+
+</div>
 
 
 
+
+        <h1>Bienvenue sur le site Depann'Car</h1>
+        <p class="lead">Depann'Car est la nouvelle solution pour vos réparation automobiles.</p>
 
 
 
 
 
         <?php include("footer.php"); ?>
-        <h1>Bienvenue sur le site Depann'Car</h1>
-        <p class="lead">Depann'Car est la nouvelle solution pour vos réparation automobiles.</p>
-
 
 </div><!-- /.container -->
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<link rel="stylesheet" href="file://C:/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/Depann'car/bootstrap-3.3.6/dist/css/bootstrap.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="file://C:/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/Depann'car/bootstrap-3.3.6/dist/js/bootstrap.js">
 
 
 </body>
