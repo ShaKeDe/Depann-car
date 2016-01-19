@@ -1,10 +1,10 @@
 <div class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
         <p class="navbar-text pull-left"> 2015 - Depann'Car
-            <a href="#" target="_blank" >LIEN CLIQUABLE</a>
+            <a href="https://github.com/ShaKeDe/Depann-car" target="_blank" >GitHub</a>
         </p>
 
-        <a href="http://youtu.be/zJahlKPCL9g" class="navbar-btn btn-danger btn pull-right">Suport</a>
+        <a href="https://github.com/ShaKeDe/Depann-car" class="navbar-btn btn-danger btn pull-right">GIT</a>
     </div>
 
 
