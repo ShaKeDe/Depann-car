@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <title>Contact</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 
@@ -18,10 +15,13 @@
 
 </head>
 <body>
+
 <?php $page = "Contact"; ?>
+
 <div class="container">
 
     <div class="starter-template">
+
         <?php include("header.php"); ?>
 
         <?php include("footer.php"); ?>
@@ -30,8 +30,7 @@
         <?php
         session_start();
         ?>
-        <!doctype html>
-        <html>
+
         <head>
             <meta charset="utf-8">
             <title>Formulaire de contact - Version minimale</title>
@@ -43,7 +42,6 @@
         <div style="padding-bottom:100px" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Contactez-nous !</h1>
                 </div>
             </div>
         </div>
@@ -104,7 +102,7 @@
 </div><!-- /.container -->
 
 </body>
-</html>
+
 
 
 
