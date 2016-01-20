@@ -58,7 +58,6 @@
 
 
 
-
 <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
