@@ -36,7 +36,7 @@ if(!empty($errors)){ // si erreur on renvoie vers la page pr�c�dente
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
     $headers .= 'FROM:' . htmlspecialchars($_POST['email']);
-    $to = 'Debienne.alexandre@gmail.com'; // Ins�rer votre adresse email ICI
+    $to = 'Debienne.alexandre@gmail.com';
     $subject = 'Message envoy� par ' . htmlspecialchars($_POST['name']) .' - <i>' . htmlspecialchars($_POST['email']) .'</i>';
     $message_content = '
   <table>
